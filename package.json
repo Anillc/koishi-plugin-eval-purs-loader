@@ -14,7 +14,7 @@
     "build-spago": "spago build",
     "build-webpack": "webpack",
     "build-src": "shx cp -r src/* lib/",
-    "build": "yarn build-webpack && yarn build-src"
+    "build": "yarn build-spago && yarn build-webpack && yarn build-src"
   },
   "devDependencies": {
     "purescript": "^0.14.4",
