@@ -1,0 +1,33 @@
+{
+  "name": "koishi-plugin-eval-purs-loader",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "description": "purescript loader for koishi-plugin-eval",
+  "repository": "https://github.com/Anillc/purs-deps-require-gen.git",
+  "author": "anillc",
+  "type": "commonjs",
+  "license": "MIT",
+  "files": [
+    "lib/"
+  ],
+  "scripts": {
+    "build-spago": "spago build",
+    "build-webpack": "webpack",
+    "build-src": "shx cp -r src/* lib/",
+    "build": "yarn build-webpack && yarn build-src"
+  },
+  "devDependencies": {
+    "purescript": "^0.14.4",
+    "shx": "^0.3.3",
+    "spago": "^0.20.3",
+    "webpack": "^5.56.0",
+    "webpack-cli": "^4.8.0"
+  },
+  "peerDependencies": {
+    "koishi-core": "^3.14.2",
+    "koishi-plugin-eval": "^3.2.5"
+  },
+  "dependencies": {
+    "superagent": "^6.1.0"
+  }
+}
